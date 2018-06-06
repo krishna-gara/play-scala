@@ -1,1 +1,1 @@
-CMD ["sbt","publish"]
+CMD ["sbt","publishLocal"]
