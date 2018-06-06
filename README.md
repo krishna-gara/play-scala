@@ -22,7 +22,7 @@ For a lot of production applications option 3 will be required. While option 2 i
 We can do both without changing our source code by using `sbt ~run` for the former and `sbt stage -DtsCompileMode=stage` for the latter. So to get option 3 to work you'll have to provide that `-DtsCompileMode=stage` jvm argument.
 
 
-## what to do if
+## what to do iF
 
 "I've created the application through activator and it runs fine in activator but it hangs when I try to run it through sbt"  
 This is a [known problem](https://github.com/typesafehub/activator/issues/1036) with activator. Activator generates a file `project\play-fork-run.sbt` that causes this. If you remove it or comment out its contents the application will run in sbt.

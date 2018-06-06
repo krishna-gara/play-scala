@@ -45,3 +45,6 @@ typingsFile := Some(baseDirectory.value / "typings" / "index.d.ts")
 // use the webjars npm directory (target/web/node_modules ) for resolution of module imports of angular2/core etc
 resolveFromWebjarsNodeModulesDir := true
 routesGenerator := InjectedRoutesGenerator
+
+libraryDependencies += "com.spotify" % "docker-client" % "3.5.13"
+
