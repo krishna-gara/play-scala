@@ -1,1 +1,2 @@
-CMD ["sbt","publishLocal"]
+RUN ["chown", "-R", "daemon:daemon", "."]
+CMD ["sbt","dist"]
